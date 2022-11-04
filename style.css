@@ -28,6 +28,12 @@ ul {
 	list-style: none;
 }
 
+#cards {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+}
+
 .card {
 	text-align: center;
 	background: #1D1C19;

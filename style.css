@@ -31,7 +31,7 @@ ul {
 #cards {
 	display: flex;
 	flex-direction: row;
-	gap: 5px;
+	gap: 15px;
 }
 
 .card {

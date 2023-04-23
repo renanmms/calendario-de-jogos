@@ -33,21 +33,7 @@ const weekdays = {
 	7: "sabádo"
 }
 
-
-function createCard() {
-	return `
-		<div class="card">
-			<h2> 21/11 <span> segunda </span> </h2>
-			<ul>
-				<li>
-					<img src="./assets/icon-brazil.svg" />
-					<strong>08:00</strong>
-					<img src="./assets/icon-cameroon.svg" />
-				</li>
-			</ul>
-		</div>
-	`
-}
+var jogo = new Game("assets/icon-brazil.svg", "assets/icon-cameroon.svg", "24/11", "11:00", weekdays[1]);
 
 document.querySelector("#app").innerHTML = `
 	<header>
@@ -55,8 +41,6 @@ document.querySelector("#app").innerHTML = `
 	</header>
 	
 	<main id="cards">
-		${createCard()}
-		${createCard()}
-		${createCard()}
+		${jogo.createCard()}
 	</main>
 `

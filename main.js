@@ -1,19 +1,21 @@
 class Game {
-	constructor(player1, player2, date){
+	constructor(player1, player2, date, time, weekday){
 		this.player1 = player1;
 		this.player2 = player2;
 		this.date = date;
+		this.time = time;
+		this.weekday = weekday;
 	}
 	
 	createCard(){
 		return `
 			<div class="card">
-				<h2> ${this.date} <span> {this.date} </span> </h2>
+				<h2> ${this.date} <span> ${this.weekday} </span> </h2>
 				<ul>
 					<li>
-						<img src="./assets/icon-brazil.svg" />
-						<strong>12:00</strong>
-						<img src="./assets/icon-cameroon.svg" />
+						<img src="${this.player1}" />
+						<strong>${this.time}</strong>
+						<img src="${this.player2}" />
 					</li>
 				</ul>
 			</div>
